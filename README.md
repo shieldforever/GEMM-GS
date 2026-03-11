@@ -6,7 +6,9 @@
 
 > **This is the official implementation of the paper "GEMM-GS: Accelerating 3D Gaussian Splatting on Tensor Cores with GEMM-Compatible Blending"  [DAC 2026]**
 
+## Run
 
+You can manually toggle whether GEMM-GS is enabled by changing ``` bool use_gemm = true ```; at line 792 in ``` GEMM-GS/submodules/gemm-gs/cuda_rasterizer/forward.cu ```.
 
 ## Citation
 
