@@ -728,7 +728,8 @@ renderCUDA_gemm(
 
             // Perform alpha blending based on the computed Gaussian powers
             #pragma unroll
-            for (int j = 0; j < BATCH_SIZE; j++)
+			int valid_batch = min(BATCH_SIZE, toDo - m);
+			for (int j = 0; j < valid_batch; j++)
             {
 				__half power_h = power_matrix[j][pixel_id];
 				// Skip if the pixel is outside the Gaussian influence

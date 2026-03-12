@@ -36,7 +36,18 @@ setup(
                     "-O3",
                     "--use_fast_math",
                     "-Xptxas=-O3",
-                    "-gencode=arch=compute_80,code=sm_80"    
+                    # Target GPU architecture:
+                    # sm_80  -> NVIDIA Ampere data-center GPUs such as A100
+                    # sm_86  -> NVIDIA Ampere consumer GPUs such as RTX 3080 / 3090
+                    # sm_89  -> NVIDIA Ada Lovelace GPUs such as RTX 4090
+                    # sm_90  -> NVIDIA Hopper GPUs such as H100
+                    #
+                    # Change this flag according to your GPU model.
+                    # Example:
+                    #   A100   -> -gencode=arch=compute_80,code=sm_80
+                    #   RTX4090-> -gencode=arch=compute_89,code=sm_89
+                    #   H100   -> -gencode=arch=compute_90,code=sm_90
+                    "-gencode=arch=compute_80,code=sm_80"
                 ]
             }
             )
