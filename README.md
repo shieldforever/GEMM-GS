@@ -1,6 +1,6 @@
 # GEMM-GS: Accelerating 3D Gaussian Splatting on Tensor Cores with GEMM-Compatible Blending 
 
-**[Paper Link](Coming Soon)**
+**[Paper Link](https://arxiv.org/abs/2604.02120)**
 
 **[Haomin Li](https://shieldforever.github.io/)\*, Bowen Zhu, [Fangxin Liu](https://mxhx7199.github.io/)\*, [Zongwu Wang](https://zongwuwang.github.io/), Xinran Liang, [Li Jiang](https://cs.sjtu.edu.cn/~jiangli/), Haibing Guan**
 
